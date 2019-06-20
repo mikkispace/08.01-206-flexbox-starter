@@ -53,12 +53,7 @@ hr {
  * https://github.com/h5bp/html5-boilerplate/issues/440
  */
 
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
+audio, canvas, iframe, img, svg, video {
     vertical-align: middle;
 }
 
@@ -96,82 +91,114 @@ textarea {
    ========================================================================== */
 
 html {
-  background-color: #fff;
+  background-color: #222;
   height: 100%;
   width: 100%;
 }
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Raleway', sans-serif;
   padding: 0 2em;
-  font-size: 1.25em;
+  font-size: 1em;
   height: 100%;
-  color: #fff;
+  color: #333A3B;
+  display: flex;
+  justify-content: center;
 }
 
-header,
-footer {
+header, footer {
   background-color: #222;
   height: 80px;
   width: 100%;
-    
+  padding: 10px;
+  font-family: 'Oswald', sans-serif;
+  color: #CFEBED;
+  display: flex;
+  justify-content: flex-start;
+  
 }
 
+header h1 {
+    font-size: 3em; 
+    padding: 0em .5em;
+}
+
+
+
+
 main {
-  background-color: #ccc;
+  background-color: #222;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: .01em;
   height: 250px;
   width: 100%;
-}
-
-header,
-footer,
-main {
-  /*set display to flex and vertically & horizontally align by setting justify-content and align-items to center*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#div-1,
-#div-2,
-#div-3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
-  line-height: 1.5em;
-  font-size: 1.25em;
-  height: auto;
+  border-bottom: 2px solid #FF8E86;
 }
 
-.wrapper span {
-  font-family: 'Lora', sans-serif;
-  font-size: 1.3em;
+main p {
+  font-size: 2em;
+  color: #CFEBED;
+  padding: 5px 35px;
+}
+
+#div-1, #div-2, #div-3 {
+  color: #CCF3FF;
+  line-height: 1.5em;
+  font-size: 1.2em;
+  background-color: #222;
+  height: 62%;
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .flex-container {
-  /*set display to flex and vertically & horizontally align by setting justify-content and align-items to center, and set flex-flow to row wrap*/
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: wrap;
     justify-content: space-between;
+    flex-flow: wrap;
+    background: #222;
 }
 
 .flex-items {
-  /*set display to flex and vertically & horizontally align by setting justify-content and align-items to center*/
-  color: #fff;
   line-height: 1.5em;
   font-size: 1.6em;
-  background-color: #f16059;
-  width: 30%;
-  height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background: #222;
+  width: 32%;
+  height: 170px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
     
 }
 
+.flex-items p {
+    padding: 0 9px;
+}
+
+#div-1, #div-2 {
+    border-right: 2px solid #FF8E86;
+    
+}
+
+span {
+    font-style: oblique;
+}
+
+footer {
+    border-top: 2px solid #FF8E86;
+}
+
+footer ul img {
+    padding-right: 2em;
+}
+
+footer ul li {
+    display: inline-block;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
