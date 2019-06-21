@@ -101,21 +101,17 @@ body {
   padding: 0 2em;
   font-size: 1em;
   height: 100%;
-  color: #333A3B;
+  color: #CFEBED;
   display: flex;
   justify-content: center;
 }
 
 header, footer {
-  background-color: #222;
-  height: 80px;
   width: 100%;
-  padding: 10px;
+  padding: .5em;
   font-family: 'Oswald', sans-serif;
-  color: #CFEBED;
   display: flex;
-  justify-content: flex-start;
-  
+  justify-content: flex-start;  
 }
 
 header h1 {
@@ -124,13 +120,10 @@ header h1 {
 }
 
 
-
-
 main {
   background-color: #222;
   font-family: 'Oswald', sans-serif;
   letter-spacing: .01em;
-  height: 250px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -140,47 +133,41 @@ main {
 
 main p {
   font-size: 2em;
-  color: #CFEBED;
-  padding: 5px 35px;
+  padding: 0em .15em;
 }
 
 #div-1, #div-2, #div-3 {
-  color: #CCF3FF;
-  line-height: 1.5em;
-  font-size: 1.2em;
-  background-color: #222;
-  height: 62%;
-  width: 33%;
+  height: auto;
+  width: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: wrap;
 }
 
 .flex-container {
     display: flex;
     justify-content: space-between;
-    flex-flow: wrap;
-    background: #222;
+    flex-flow: row wrap;
+    max-width: 1200px;
 }
 
 .flex-items {
-  line-height: 1.5em;
-  font-size: 1.6em;
-  background: #222;
-  width: 32%;
-  height: 170px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-    
+  border-bottom: 2px solid #FF8E86;
 }
 
 .flex-items p {
-    padding: 0 9px;
+  line-height: 1.3em;
+  font-size: 1.2em;
+    padding: 0 1%;
 }
 
-#div-1, #div-2 {
+#div-2 {
     border-right: 2px solid #FF8E86;
+    border-left: 2px solid #FF8E86;
     
 }
 
@@ -193,7 +180,7 @@ footer {
 }
 
 footer ul img {
-    padding-right: 2em;
+    padding-right: 1.5em;
 }
 
 footer ul li {
@@ -282,19 +269,23 @@ footer ul li {
 @media all and (max-width: 768px) {
     body {
       padding: 1em;
+      }
+    #div-1, #div-2, #div-3 {
+        flex-basis: 100%;
+    }
+    #div-2 {
+        border-right: none;
+        border-left: none;
     }
 }
 
 @media (min-width: 1200px) {
-  #div-1,
-  #div-2{
-      /* set your flex value to 1 50% */
-  }
-
-  #div-3 {
-    /* set your flex value to 1 100% */
-  }
+  .flex-items{
+      flex-basis: 33%;
+} 
 }
+
+
 
 @media print,
        (-webkit-min-device-pixel-ratio: 1.25),
